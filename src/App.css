@@ -12,3 +12,12 @@
 .footer {
     min-height: var(--border-height);
 }
+
+.card-width {
+    width: 18rem
+}
+
+
+.profile-card-width {
+    width: 10rem
+}

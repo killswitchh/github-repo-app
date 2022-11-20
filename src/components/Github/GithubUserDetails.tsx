@@ -29,6 +29,11 @@ function GithubUserDetails() {
             githubService
                 .getUserRepos(searchString)
                 .then(res => {
+                    if (res.length == 0) {
+                        throw new Error(
+                            CONSTANTS.GITHUB_ERROR_MESSAGES.NOT_FOUND,
+                        )
+                    }
                     dispatch(setUserInfo(res[0].owner))
                     dispatch(setUserRepositories(res))
                 })

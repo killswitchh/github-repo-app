@@ -13,7 +13,7 @@ function UserSearch() {
 
     return (
         <section>
-            <form>
+            <form onSubmit={event => event.preventDefault()}>
                 <label>
                     Github Username:
                     <input

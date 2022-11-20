@@ -1,5 +1,8 @@
 export const CONSTANTS = {
     EMPTY_STRING: '',
+    GITHUB_ERROR_MESSAGES: {
+        NOT_FOUND: 'Something went wrong: User not found'
+    },
     API_URL: {
         GITHUB_BASE_URL: 'https://api.github.com/',
     },
