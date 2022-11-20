@@ -1,4 +1,4 @@
 function ContactUs() {
-  return <div> Test Title </div>;
+    return <div> Test Title </div>
 }
-export default ContactUs;
+export default ContactUs

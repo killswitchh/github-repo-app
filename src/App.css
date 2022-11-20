@@ -1,14 +1,14 @@
 :root {
-  --border-height: 10vh;
-  --main-container-height: calc(100vh - (2 * var(--border-height)));
+    --border-height: 10vh;
+    --main-container-height: calc(100vh - (2 * var(--border-height)));
 }
 
 .main-component {
-  min-height: var(--main-container-height);
+    min-height: var(--main-container-height);
 }
 .header {
-  min-height: var(--border-height);
+    min-height: var(--border-height);
 }
 .footer {
-  min-height: var(--border-height);
+    min-height: var(--border-height);
 }
