@@ -15,8 +15,7 @@ export const ApiWrapper = {
             method: HTTP_METHODS.GET,
             headers: this.getDefaultHeaders(),
         })
-        const getResponse: any = await this.handleError(response)
-        return getResponse
+        return await this.handleError(response)
     },
 
     async handleError(response: any) {

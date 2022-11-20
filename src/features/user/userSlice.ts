@@ -12,16 +12,17 @@ export type UserStore = {
     userRepositories: GithubRepository[] | null
 }
 
-export const defaultUserState: UserStore = {
-    searchString: CONSTANTS.EMPTY_STRING,
-    userInfo: null,
-    userRepositories: null,
-}
-
 export type StoreSlice = {
     name: string
     initialState: Store
     reducers: any
+}
+
+
+export const defaultUserState: UserStore = {
+    searchString: CONSTANTS.EMPTY_STRING,
+    userInfo: null,
+    userRepositories: null,
 }
 
 export const userInfoSlice = createSlice({

@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { setSearchString, Store } from '../../features/user/userSlice'
+import { useDispatch } from 'react-redux'
+import { setSearchString } from '../../features/user/userSlice'
 
 function UserSearch() {
-    const searchString = useSelector((state: Store) => state.user.searchString)
     const dispatch = useDispatch()
     const handleSubmit = (event: React.FormEvent<HTMLInputElement>) => {
         event.preventDefault()
